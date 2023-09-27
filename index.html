@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Convertor de Unidades</title>
+</head>
+
+<body>
+    <main>
+        <form action="#" method="post">
+            <h1>Convertor de Unidades</h1>
+            <label for="value">Digite a quantidade</label>
+            <input type="number" class="num">
+            <label for="number">De:</label>
+            <select name="escolha" id="escolha">
+                <optgroup>
+                    <option value="qui">Quilômetro(s)</option>
+                    <option value="metro">Metro(s)</option>
+                    <option value="cen">Centímetro(s)</option>
+                    <option value="mili">Milímetro(s)</option>
+                </optgroup>
+            </select>
+            <select name="para" id="para">
+                <optgroup>
+                    <option value="metro">Metro(s)</option>
+                    <option value="cen">Centímetro(s)</option>
+                    <option value="mili">Milímetro(s)</option>
+                    <option value="quil">Quilômetro(s)</option>
+                </optgroup>
+                <input type="button" value="Converter" class="button" onclick="teste()">
+                <label for="value">Resultado</label>
+                <p class="result"></p>
+            </select>
+        </form>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
